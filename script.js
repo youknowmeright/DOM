@@ -327,6 +327,7 @@ function loadHomeTrending() {
             </div>
             <h2 class="text-md font-semibold text-gray-800 line-clamp-2">${product.title}</h2>
             <p class="text-lg font-bold text-purple-700 mt-2">$${product.price}</p>
+              <button class="btn btn-primary mt-2 w-full">Add to Cart</button>
           </div>
         `;
         container.appendChild(card);
@@ -359,6 +360,7 @@ function loadProductsPage() {
               </div>
               <h2 class="text-md font-semibold text-gray-800 line-clamp-2">${product.title}</h2>
               <p class="text-lg font-bold text-purple-700 mt-2">$${product.price}</p>
+              <button class="btn btn-primary mt-2 w-full">Add to Cart</button>
             </div>
           `;
           container.appendChild(card);
@@ -399,7 +401,7 @@ function showProducts() {
 }
 
 // ======================
-// Event Delegation for navbar (desktop + mobile)
+// E for navbar (desktop + mobile)
 // ======================
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("nav-home")) {
